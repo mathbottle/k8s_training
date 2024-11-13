@@ -1,0 +1,21 @@
+inputSet:
+  name: ds
+  identifier: ds
+  orgIdentifier: training_13thNov
+  projectIdentifier: Lab_Ruchira
+  pipeline:
+    identifier: cd_ruchira
+    stages:
+      - stage:
+          identifier: Deploy
+          type: Deployment
+          spec:
+            environment:
+              environmentRef: <+input>
+              environmentInputs: <+input>
+              serviceOverrideInputs: <+input>
+              infrastructureDefinitions: <+input>
+    variables:
+      - name: test
+        type: String
+        value: <+input>
