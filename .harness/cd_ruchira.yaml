@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: Deploy
         identifier: Deploy
-        description: This is test
+        description: This is test and we love it
         type: Deployment
         spec:
           deploymentType: Kubernetes
