@@ -15,10 +15,11 @@ pipeline:
           service:
             serviceRef: Ruchira_Lab_Service
           environment:
-            environmentRef: org.dev
+            environmentRef: <+input>
             deployToAll: false
-            infrastructureDefinitions:
-              - identifier: dev_infra
+            environmentInputs: <+input>
+            serviceOverrideInputs: <+input>
+            infrastructureDefinitions: <+input>
           execution:
             steps:
               - step:
