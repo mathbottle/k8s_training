@@ -1,6 +1,6 @@
 pipeline:
   name: cd_ruchira
-  identifier: 
+  identifier: cd_ruchira
   projectIdentifier: Lab_Ruchira
   orgIdentifier: training_13thNov
   tags: {}
