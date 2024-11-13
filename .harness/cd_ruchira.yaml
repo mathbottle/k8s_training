@@ -8,7 +8,7 @@ pipeline:
     - stage:
         name: Deploy
         identifier: Deploy
-        description: This is test
+        description: This is test and we love it
         type: Deployment
         spec:
           deploymentType: Kubernetes
@@ -24,22 +24,6 @@ pipeline:
               - step:
                   name: Rollout Deployment
                   identifier: rolloutDeployment
-                  type: K8sRollingDeploy
-                  timeout: 10m
-                  spec:
-                    skipDryRun: false
-                    pruningEnabled: false
-              - step:
-                  name: Rollout Deployment
-                  identifier: rolloutDeployment1
-                  type: K8sRollingDeploy
-                  timeout: 10m
-                  spec:
-                    skipDryRun: false
-                    pruningEnabled: false
-              - step:
-                  name: Rollout Deployment
-                  identifier: rolloutDeployment2
                   type: K8sRollingDeploy
                   timeout: 10m
                   spec:
